@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Background
-  - Combatants
-  - 
-  - 
+  - Player
+  - Enemy
+  - Projectile
   - 
   - 
   - 
@@ -44,6 +44,12 @@ TagManager:
   - name: Background
     uniqueID: 2491480145
     locked: 0
-  - name: Combatants
+  - name: Player
     uniqueID: 1476760355
+    locked: 0
+  - name: Enemy
+    uniqueID: 3785214507
+    locked: 0
+  - name: Projectile
+    uniqueID: 524829345
     locked: 0
