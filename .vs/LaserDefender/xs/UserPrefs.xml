@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{2739083D-BD6A-EF71-7844-B438E0DFC5F5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyPathing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemySpawner.cs">
     <Files>
       <File FileName="Assets/Scripts/Player.cs" Line="28" Column="18" />
-      <File FileName="Assets/Scripts/Shredder.cs" Line="17" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="20" Column="11" />
-      <File FileName="Assets/Scripts/EnemyPathing.cs" Line="35" Column="2" />
+      <File FileName="Assets/Scripts/Shredder.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/EnemyPathing.cs" Line="8" Column="31" />
+      <File FileName="Assets/Scripts/WaveConfig.cs" Line="25" Column="30" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="24" Column="77" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +14,7 @@
           <Node name="LaserDefender" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="EnemyPathing.cs" selected="True" />
+                <Node name="EnemySpawner.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="662b556c-410c-4dd2-8200-c291500e2237" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5a901616-0598-41e5-aba8-c159ce50f958" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
