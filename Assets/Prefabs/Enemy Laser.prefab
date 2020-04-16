@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3548351059591092757}
   - component: {fileID: 3548351059591092759}
   - component: {fileID: 4657271687293017210}
-  m_Layer: 11
+  - component: {fileID: 2034468478712351372}
+  m_Layer: 12
   m_Name: Enemy Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,11 +70,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 524829345
-  m_SortingLayer: 4
+  m_SortingLayerID: 1072073593
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7edaf0fb194e66f428698fafd8f0716b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1d1d8ea477e934c40adc6097994f29a3, type: 3}
+  m_Color: {r: 0.9056604, g: 0.8091037, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -116,4 +117,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee79952d672f48c5a4f825d3a70ab0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 10
+--- !u!70 &2034468478712351372
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3548351059591092778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.26, y: 0.74}
+  m_Direction: 0

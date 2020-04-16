@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.5f;
+    [SerializeField] int health = 200;
+
+    [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
@@ -17,8 +21,7 @@ public class Player : MonoBehaviour
     float xMax;
     float yMin;
     float yMax;
-    float health = 10f;
-    float maxHealth = 100f;
+   
 
    
     // Start is called before the first frame update
@@ -38,7 +41,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Fire();
-        TakeDamage();
+        
     }
 
     private void Fire()
@@ -68,19 +71,22 @@ public class Player : MonoBehaviour
  
     }
 
- 
-
-
-
-    public void TakeDamage()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        float currentHealth = maxHealth;
-        if (myCollider.IsTouchingLayers(LayerMask.GetMask("Projectile")))
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if (!damageDealer) { return; }
+        ProcessHit(damageDealer);
+    }
+
+
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+        damageDealer.Hit();
+        if (health <= 0)
         {
-            currentHealth = maxHealth - health;
-            Debug.Log("Collision happened" + currentHealth);
-
-
+            Destroy(gameObject);
         }
        
        

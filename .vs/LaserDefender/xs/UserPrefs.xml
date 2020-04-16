@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{2739083D-BD6A-EF71-7844-B438E0DFC5F5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BackgroundScroller.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="28" Column="18" />
+      <File FileName="Assets/Scripts/Player.cs" Line="77" Column="39" />
       <File FileName="Assets/Scripts/Shredder.cs" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="36" Column="2" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="48" Column="39" />
       <File FileName="Assets/Scripts/EnemyPathing.cs" />
       <File FileName="Assets/Scripts/WaveConfig.cs" />
-      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="30" Column="45" />
-      <File FileName="Assets/Scripts/DamageDealer.cs" Line="16" Column="29" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" />
+      <File FileName="Assets/Scripts/DamageDealer.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/BackgroundScroller.cs" Line="24" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +16,7 @@
           <Node name="LaserDefender" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemy.cs" selected="True" />
+                <Node name="BackgroundScroller.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb06d266-7f67-4b41-be67-aacb78c79eb7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="87376485-aa01-4cba-b9fa-b215861aa0d3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
