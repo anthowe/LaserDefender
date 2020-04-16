@@ -102,6 +102,8 @@ MonoBehaviour:
   maxTimeBetweenShots: 3
   enemyLaserPrefab: {fileID: 3548351059591092778, guid: 84778c728ab308c489f9b41f0fb32a47,
     type: 3}
+  enemyExplosionPrefab: {fileID: 5012786441985636802, guid: 9f3fabde134ce1240847198f9f23755f,
+    type: 3}
   enemyProjectileSpeed: 10
 --- !u!114 &1928789628238973734
 MonoBehaviour:

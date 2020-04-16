@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 956768288}
   - component: {fileID: 956768287}
   m_Layer: 0
-  m_Name: Closer Particles
+  m_Name: Starfield Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5149,7 +5149,7 @@ GameObject:
   - component: {fileID: 1097382929}
   - component: {fileID: 1097382928}
   m_Layer: 0
-  m_Name: Starfield
+  m_Name: Starfield Far
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
