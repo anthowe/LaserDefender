@@ -5,21 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
-  
-    public void LoadGameOver()
-    {
-        SceneManager.LoadScene(2);
-    }
-    public void LoadGameScene()
-    {
-        SceneManager.LoadScene(1);
-    }
     public void LoadStartMenu()
     {
         SceneManager.LoadScene(0);
     }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+   
+  
     public void QuitGame()
     {
-        QuitGame();
+        Application.Quit();
     }
 }
