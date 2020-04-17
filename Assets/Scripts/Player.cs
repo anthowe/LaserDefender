@@ -15,6 +15,13 @@ public class Player : MonoBehaviour
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.1f;
 
+
+    [Header("Audio Clips")]
+    [SerializeField] AudioClip deathClip;
+    [SerializeField] [Range(0, 1)] float deathVolume = 1f;
+    [SerializeField] AudioClip fireClip;
+    [SerializeField] [Range(0,1)] float fireVolume = 1f;
+
     Coroutine firingCoroutine;
     BoxCollider2D myCollider;
     float xMin;
@@ -66,7 +73,9 @@ public class Player : MonoBehaviour
           Quaternion.identity) as GameObject;
 
             laser.GetComponent<Rigidbody2D>().velocity = (new Vector2(0, projectileSpeed));
+            AudioSource.PlayClipAtPoint(fireClip, Camera.main.transform.position, fireVolume);
             yield return new WaitForSeconds(projectileFiringPeriod);
+            
         }
  
     }
@@ -86,10 +95,15 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
        
        
+    }
+    private void Die()
+    {
+        Destroy(gameObject);
+        AudioSource.PlayClipAtPoint(deathClip, Camera.main.transform.position, deathVolume);
     }
 
     private void Move()

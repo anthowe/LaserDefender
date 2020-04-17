@@ -102,7 +102,11 @@ MonoBehaviour:
   laserPrefab: {fileID: 8373198026956059246, guid: 19fd9139060964597a0fa680346edd94,
     type: 3}
   projectileSpeed: 20
-  projectileFiringPeriod: 0.1
+  projectileFiringPeriod: 0.05
+  deathClip: {fileID: 8300000, guid: 109b4e19a6e444cd68f6ea37757db523, type: 3}
+  deathVolume: 0.909
+  fireClip: {fileID: 8300000, guid: 5fa3fb869ba2d483090a404522f7c5a6, type: 3}
+  fireVolume: 0.27
 --- !u!61 &282684539
 BoxCollider2D:
   m_ObjectHideFlags: 0

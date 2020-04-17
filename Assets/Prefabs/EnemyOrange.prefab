@@ -105,6 +105,11 @@ MonoBehaviour:
   enemyExplosionPrefab: {fileID: 5012786441985636802, guid: 9f3fabde134ce1240847198f9f23755f,
     type: 3}
   enemyProjectileSpeed: 10
+  durationOfExplosion: 5
+  deathClip: {fileID: 8300000, guid: 6b2885b674218426698f4b24d60921ab, type: 3}
+  deathVolume: 1
+  fireClip: {fileID: 8300000, guid: a78c577526f594de0a446fccd882ad0a, type: 3}
+  fireVolume: 0.443
 --- !u!114 &1928789628238973734
 MonoBehaviour:
   m_ObjectHideFlags: 0
