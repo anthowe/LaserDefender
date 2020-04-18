@@ -5,8 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Enemy : MonoBehaviour
 {
-    [Header("Enemy Combat")]
+    [Header("Enemy Stats")]
     [SerializeField] float health = 100f;
+    [SerializeField] int scoreValue = 150;
+
+    [Header("Enemy Combat")]
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = .2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
@@ -55,11 +58,14 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
+
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
         if (!damageDealer) { return; }
         ProcessHit(damageDealer);
-        
-       
+
+     
+
     }
 
     private void ProcessHit(DamageDealer damageDealer)
@@ -73,6 +79,7 @@ public class Enemy : MonoBehaviour
     }
     private void Die()
     {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosionFX = Instantiate(
             enemyExplosionPrefab,
