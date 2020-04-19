@@ -7,6 +7,8 @@ public class GameSession : MonoBehaviour
 {
     [SerializeField] int score = 0;
     [SerializeField] Text scoreText;
+    [SerializeField] int health = 0;
+    [SerializeField] Text healthText;
 
     // Start is called before the first frame update
     void Awake()
@@ -38,6 +40,7 @@ public class GameSession : MonoBehaviour
     {
         score += scoreValue;
     }
+
 
     public void ResetGame()
     {

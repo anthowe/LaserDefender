@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &174377350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+    type: 3}
+  m_PrefabInstance: {fileID: 751747057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &249853312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,6 +215,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1816700461, guid: 5965488131573411aa58006a5d8ada18, type: 3}
+      propertyPath: m_Text
+      value: '000000
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 166762468953488595, guid: 5965488131573411aa58006a5d8ada18,
         type: 3}
       propertyPath: m_Name
@@ -313,6 +331,53 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 216025522641120481, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 309
+      objectReference: {fileID: 0}
+    - target: {fileID: 216025522641120481, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -290
+      objectReference: {fileID: 0}
+    - target: {fileID: 216025522641120481, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 216025522641120481, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8980392
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.89443576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.054901943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220094848183893104, guid: 5965488131573411aa58006a5d8ada18,
+        type: 3}
+      propertyPath: m_Text
+      value: '000000
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5965488131573411aa58006a5d8ada18, type: 3}
 --- !u!4 &814603226 stripped
@@ -420,6 +485,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2047822632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2044323756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1816700461, guid: 5965488131573411aa58006a5d8ada18,
+    type: 3}
+  m_PrefabInstance: {fileID: 751747057}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2047822632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1112,6 +1189,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameSession
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998936529721448356, guid: 893662478d99e9841b1239952fe46e8d,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 2044323756}
+    - target: {fileID: 5998936529721448356, guid: 893662478d99e9841b1239952fe46e8d,
+        type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 174377350}
+    - target: {fileID: 5998936529721448356, guid: 893662478d99e9841b1239952fe46e8d,
+        type: 3}
+      propertyPath: health
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5998936529721448357, guid: 893662478d99e9841b1239952fe46e8d,
         type: 3}

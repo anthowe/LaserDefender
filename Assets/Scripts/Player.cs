@@ -85,8 +85,11 @@ public class Player : MonoBehaviour
         
 
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+       
         if (!damageDealer) { return; }
+       
         ProcessHit(damageDealer);
+      
      
     }
 
@@ -103,6 +106,14 @@ public class Player : MonoBehaviour
        
        
     }
+
+    public float GetHealth()
+    {
+        return health;
+    }
+
+
+
     private void Die()
     {
         FindObjectOfType<LoadLevel>().LoadGameOver();
